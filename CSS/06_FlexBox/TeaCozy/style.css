@@ -47,7 +47,8 @@ main {
 
 /*mission section*/
 #Mission {
-    width: 90%;
+    width: 800px;
+    height: 1200px;
     max-height: 700px;
     max-width: 1200px;
     margin: 0 auto;
@@ -60,6 +61,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
 }
 
 #Mission h2,
@@ -89,12 +91,13 @@ main {
     margin: 2% 0;
 }
 
-#figure_container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
+.figure_container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
 }
 
 figure {
@@ -110,9 +113,7 @@ figure img {
     display: block;
 }
 
-figcaption {
-    margin-top: 3.334%;
-}
+
 
 /*locations section*/
 #Locations{
