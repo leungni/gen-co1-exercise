@@ -327,12 +327,9 @@ li{
 }
 .bx-intro a {
     color:rgba(128, 128, 128, 0.315)
-    transition: text-underline-offset;
-    text-underline-offset: .4em;
 }
 .bx-intro a:hover{
     transition: text-underline-offset;
-    text-underline-offset: .4em;
 }
 
 /*-------practising part for mobile-------*/
@@ -547,7 +544,7 @@ li{
 }
 .right-side-box#rsb2 {
     border-bottom: solid 0px #0a0a0a;
-    border-right: solid 0px ##0a0a0a;
+    border-right: solid 0px #0a0a0a;
 }
 
 .right-side-box-content {
