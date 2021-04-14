@@ -1,52 +1,52 @@
-html{
+html {
     font-family: 'Times New Roman', Times, serif;
     overflow-x: hidden;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-main{
-     position: relative;
+main {
+    position: relative;
 }
 
-strong{
+strong {
     font-weight: bold;
 }
 
-p{
+p {
     font-family: 'Times New Roman', Times, serif;
 }
 
-h2{
+h2 {
     font-size: 48px;
     font-weight: bold;
     margin: 24px;
     color: rgb(58, 56, 56);
 }
 
-h3{
+h3 {
     font-size: 40px;
-    color:rgb(58, 56, 56)
+    color: rgb(58, 56, 56)
 }
 
-h4{
+h4 {
     font-size: 24px;
     margin: 24px;
     color: rgb(58, 56, 56);
 }
 
-h5{
+h5 {
     font-size: 24%;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.banner{
+.banner {
     width: 60%;
 }
 
@@ -55,22 +55,27 @@ h5{
     height: 64px;
 }
 
+
 /*----------------------------header----------------------------*/
-header{
+
+header {
     width: 100%;
-    height: 32px;
+    height: 69px;
     padding: 16px 0;
     position: fixed;
     z-index: 100;
     background-color: white;
     border-bottom: solid 1px rgba(128, 128, 128, 0.135);
 }
+
+
 /*-------header logo-------*/
-.header_logo{
+
+.header_logo {
     padding: 24px;
 }
 
-.logo{
+.logo {
     display: inline-block;
     height: 32px;
     line-height: 32px;
@@ -79,19 +84,22 @@ header{
     text-decoration: none;
 }
 
-.logo img{
+.logo img {
     float: left;
     margin-left: 24px;
 }
+
+
 /*-------header list-------*/
-.header_button{
+
+.header_button {
     float: right;
     line-height: 32px;
     display: flex;
     padding-right: 24px;
 }
 
-li{
+li {
     display: inline-block;
 }
 
@@ -110,23 +118,29 @@ li{
     color: black;
     text-decoration-line: none;
 }
+
+
 /*-------header for desktop-------*/
+
 @media only screen and (min-width: 601px) {
-    .phone_header{
+    .phone_header {
         display: none;
     }
 }
+
+
 /*-------header for mobile-------*/
+
 @media only screen and (max-width: 600px) {
-    .desktop_header{
+    .desktop_header {
         display: none;
     }
-    .phone_header{
+    .phone_header {
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    header a img{
+    header a img {
         transition: border-bottom 150ms 25ms;
         color: black;
         text-decoration-line: none;
@@ -138,7 +152,8 @@ li{
 
 
 /*----------------------------learn smth----------------------------*/
-.learn_part{
+
+.learn_part {
     background-color: rgba(128, 128, 128, 0.274);
     display: flex;
     padding: 32px 72px 32px 24px;
@@ -149,25 +164,25 @@ li{
     box-sizing: border-box;
 }
 
-.learn_part h4{
+.learn_part h4 {
     font-family: sans-serif;
     font-weight: 400px;
-    color:rgb(58, 56, 56);
+    color: rgb(58, 56, 56);
     font-size: 16px;
     margin-top: 32px;
     line-height: 1.5em;
 }
 
-.learn_part > img {
+.learn_part>img {
     box-sizing: border-box;
 }
 
-.learn_part .learn_content{
+.learn_part .learn_content {
     margin-left: 16px;
 }
 
-.button{
-    background-color:rgb(58, 56, 56);
+.button {
+    background-color: rgb(58, 56, 56);
     color: white;
     padding: 16px;
     width: 60%;
@@ -177,99 +192,112 @@ li{
     font-size: 24px;
     transition: background-color 400ms;
     font-family: sans-serif;
-
 }
 
-.button a{
+.button a {
     display: inline-block;
     width: 100%;
     color: white;
 }
 
-.button:hover{
+.button:hover {
     background-color: rgba(58, 56, 56, 0.623);
 }
 
+
 /*-------learn smth for tablet-------*/
-@media only screen and (min-width: 750px) and (max-width: 1110px){
-    h2{
+
+@media only screen and (min-width: 750px) and (max-width: 1110px) {
+    h2 {
         font-size: 32px;
     }
-    h4{
+    h4 {
         font-size: 18px;
         font-weight: 500;
     }
-    .learn_part{
+    .learn_part {
         padding-right: 24px;
     }
-    .learn_content{
+    .learn_content {
         justify-content: center;
     }
-    .learn_content .button{
+    .learn_content .button {
         width: 60%;
         margin: 24px auto;
     }
 }
+
+
 /*-------learn smth for mobile-------*/
-@media only screen and (min-width: 501px) and (max-width: 850px){
-    .learn_part.learn_content{
+
+@media only screen and (min-width: 501px) and (max-width: 850px) {
+    .learn_part.learn_content {
         padding: 32px 24px;
     }
 }
 
-@media only screen and (max-width: 850px){
-    .learn_part{
+@media only screen and (max-width: 850px) {
+    .learn_part {
         display: block;
         padding: 0px;
     }
-    .banner{
+    .banner {
         width: 100%;
         height: auto;
     }
-    .learn_part h2{
+    .learn_part h2 {
         margin: 0;
         font-size: 40px;
     }
-    .learn_part h4{
+    .learn_part h4 {
         margin: 32px 0 0;
     }
-    .learn_part .learn_content{
+    .learn_part .learn_content {
         margin-left: 0;
     }
-    .learn_part .button{
+    .learn_part .button {
         margin: 24px auto 0;
     }
 }
+
+
 /*----------------------------practising part----------------------------*/
-.practising_part{
+
+.practising_part {
     background-color: white;
     display: inline-flex;
     padding: 0 8px 0 24px;
     height: auto;
 }
 
-#info-banner{
+#info-banner {
     width: 100%;
 }
-.left-side{
+
+.left-side {
     display: block;
     width: 60%;
     padding: 32px 0 32px;
 }
+
 .left-side-content h3 {
     margin: 34px 0 24px;
 }
+
 .left-side-content p {
     line-height: 1.5em;
     font-family: sans-serif;
 }
-.left-side-content h6{
+
+.left-side-content h6 {
     margin-top: 34px;
 }
-.practising_part h3{
+
+.practising_part h3 {
     font-weight: bold;
 }
-.right_side{
+
+.right_side {
     width: 40%;
     border-left: 1px;
     margin-left: 24px;
@@ -278,29 +306,34 @@ li{
     border-left: solid 1px rgba(128, 128, 128, 0.315);
     padding-top: 32px;
 }
-.box{
+
+.box {
     display: flex;
     border-left: solid px rgba(128, 128, 128, 0.315);
     border-bottom: solid 1px rgba(128, 128, 128, 0.315);
     margin-bottom: 2px;
 }
+
 .bx_images {
     width: 35%;
     height: auto;
     padding: 16px;
     align-items: flex-start;
 }
+
 #bx_2 #bx_3 {
     border-top: solid 1px rgba(128, 128, 128, 0.315);
 }
-#bx_3{
+
+#bx_3 {
     border: 0;
 }
 
-#bx_1_image{
+#bx_1_image {
     padding-top: 0;
 }
-.bx-intro{
+
+.bx-intro {
     width: 65%;
     height: auto;
     display: flex;
@@ -308,36 +341,45 @@ li{
     justify-content: center;
     margin: auto;
 }
-.bx_mobileimg{
+
+.bx_mobileimg {
     width: 35%;
     height: auto;
     padding: 16px;
     align-items: flex-start;
 }
-.bx-intro h5{
+
+.bx-intro h5 {
     margin: 8px 0;
 }
-.bx-intro p{
+
+.bx-intro p {
     margin: 8px 0;
     line-height: 24px;
     font-weight: 300;
 }
-.readmore{
+
+.readmore {
     margin: 8px 0;
 }
+
 .bx-intro a {
-    color:rgba(128, 128, 128, 0.315)
+    color: rgba(128, 128, 128, 0.315)
 }
-.bx-intro a:hover{
+
+.bx-intro a:hover {
     transition: text-underline-offset;
 }
 
+
 /*-------practising part for mobile-------*/
+
 @media only screen and (min-width:501px) {
     .bx_mobileimg {
-        display:none;
+        display: none;
     }
 }
+
 @media only screen and (min-width: 950px) {
     .box {
         transition: background-color 400ms ease-in;
@@ -356,6 +398,7 @@ li{
         padding-top: 16px;
     }
 }
+
 @media only screen and (max-width: 1185px) {
     .left-side p {
         font-size: 12px;
@@ -367,6 +410,7 @@ li{
         font-size: 10px;
     }
 }
+
 @media only screen and (min-width:501px) and (max-width:950px) {
     .practising_part {
         padding: 16px 24px;
@@ -376,7 +420,7 @@ li{
     .right_side {
         padding-top: 0;
     }
-    .bx_images{
+    .bx_images {
         justify-content: center;
     }
     .bx_intro {
@@ -396,22 +440,23 @@ li{
 }
 
 
-
-
 /* Learn Section */
+
 .learn-section h3 {
     font-weight: bold;
     width: 100%;
     text-align: center;
     padding-bottom: 32px;
-    color:rgba(0, 0, 0, 0.692);
+    color: rgba(0, 0, 0, 0.692);
 }
+
 .learn-section h6 {
     font-size: 16px;
     color: black;
     font-family: 'Roboto';
     font-weight: 300;
 }
+
 .learn-section p {
     line-height: 1.25em;
     font-size: 14px;
@@ -419,26 +464,31 @@ li{
     color: black;
     font-weight: 300;
 }
+
 .learn-container {
     padding: 32px 72px 0;
     display: flex;
     flex-flow: wrap;
-    justify-content:center; 
+    justify-content: center;
     width: auto;
-    background-color:rgba(128, 128, 128, 0.315);
+    background-color: rgba(128, 128, 128, 0.315);
 }
+
 .learn-box {
     flex: 0 1 30%;
     margin: 0 16px 32px;
     background-color: white;
 }
+
 .learn-box-text {
     padding: 16px 16px 24px;
 }
+
 .learn-box img {
     height: auto;
     width: 100%;
 }
+
 .learn-box h5 {
     margin-bottom: 24px;
     color: black;
@@ -456,6 +506,7 @@ li{
         flex: 40%;
     }
 }
+
 @media only screen and (max-width: 660px) {
     .learn-section {
         margin-bottom: 64px;
@@ -492,56 +543,69 @@ li{
         border-left: solid 5px #F9564F;
     }
 }
+
 @media only screen and (max-width:475px) {
     .learn-section h3 {
         padding-top: 0;
     }
 }
 
+
 /* Thesis Section */
+
 .thesis-section {
     background-color: white;
 }
+
 .thesis-section h3 {
     font-weight: bold;
     text-align: center;
     padding: 32px;
     color: rgba(0, 0, 0, 0.692);
 }
+
 .thesis-content {
     display: inline-flex;
 }
+
 .thesis-left-side {
     width: 60%;
     margin: 0 24px 32px;
 }
+
 .thesis-left-side h5 {
     margin-bottom: 8px;
 }
+
 .thesis-left-side p {
     font-size: 13px;
     font-family: 'Work Sans';
     line-height: 1.25em;
 }
+
 .thesis-content video {
     width: 100%;
     height: auto;
     margin-bottom: 24px;
 }
+
 .thesis-right-side {
     display: block;
     width: 40%;
 }
+
 .thesis-right-side img {
     width: 35%;
     height: auto;
     margin: 16px;
     align-items: flex-start;
 }
+
 .right-side-box#rsb1 {
     border-left: solid 0px #0a0a0a;
     border-bottom: solid 0px #0a0a0a;
 }
+
 .right-side-box#rsb2 {
     border-bottom: solid 0px #0a0a0a;
     border-right: solid 0px #0a0a0a;
@@ -554,14 +618,17 @@ li{
     justify-content: center;
     margin-right: 8px;
 }
+
 .right-side-box-content h5 {
     margin-bottom: 16px;
     line-height: 1.25em;
 }
+
 .right-side-box-content p {
     line-height: 1.25em;
     font-weight: 300;
 }
+
 @media only screen and (min-width:831px) {
     .thesis-section span {
         display: none;
@@ -571,17 +638,20 @@ li{
     }
 }
 
+
 /* Mobile Thesis Section */
+
 @media only screen and (min-width: 830px) and (max-width: 1150px) {
     .thesis-right-side p {
         font-size: 14px;
         font-weight: 300;
         line-height: 1.5em;
     }
-     .thesis-right-side h5 {
+    .thesis-right-side h5 {
         font-size: 18px;
     }
 }
+
 @media only screen and (max-width:830px) {
     .thesis-right-side {
         display: none;
@@ -606,12 +676,16 @@ li{
         display: none;
     }
 }
+
 @media only screen and (max-width:660px) {
     .thesis-section h3 {
         padding-top: 0;
     }
 }
+
+
 /* footer section */
+
 .footer {
     background-color: rgba(0, 0, 0, 0.733);
     color: white;
@@ -619,23 +693,29 @@ li{
     border-width: 100%;
     padding: 16px 24px 48px;
 }
+
 .footer a {
     color: white;
     margin-left: 16px;
     padding-bottom: 3px;
 }
+
 .footer a:hover {
     border-bottom: solid 2px #f74842;
 }
+
 .footer-left {
     float: left;
 }
+
 .footer-right {
     font-size: 12px;
     float: right;
 }
 
+
 /* Mobile Footer Section */
+
 @media only screen and (max-width:600px) {
     .footer-right {
         display: none;
@@ -643,7 +723,7 @@ li{
     .footer-left {
         padding: 16px;
         width: 100%;
-    }    
+    }
     .footer {
         color: black;
         padding: 0;
